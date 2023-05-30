@@ -12,7 +12,7 @@ fi
 echo "Packaging $tag"
 
 rm -rf dist
-yarn install && yarn build && npx @grafana/sign-plugin@latest
+yarn install && yarn build && npx @grafana/sign-plugin@latest --rootUrls http://localhost:3000
 
 cp -r dist grafana-guidedtour-panel
 zip -r grafana-guidedtour-panel.zip grafana-guidedtour-panel
