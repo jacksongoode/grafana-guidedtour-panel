@@ -7,8 +7,8 @@
   "info": {
     "description": "Guided tour for Grafana dashboards",
     "author": {
-      "name": "Grafana Labs",
-      "url": "https://grafana.com"
+      "name": "nLine",
+      "url": "https://nline.io"
     },
     "keywords": ["Guided tour"],
     "logos": {
@@ -18,11 +18,11 @@
     "links": [
       {
         "name": "Website",
-        "url": "https://github.com/jacksongoode/grafana-guidedtour-panel"
+        "url": "https://github.com/jacksongoode/nline-guidedtour-panel"
       },
       {
         "name": "License",
-        "url": "https://github.com/jacksongoode/grafana-guidedtour-panel/blob/main/LICENSE"
+        "url": "https://github.com/jacksongoode/nline-guidedtour-panel/blob/main/LICENSE"
       }
     ],
     "screenshots": [],

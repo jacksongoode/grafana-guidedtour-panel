@@ -22,7 +22,7 @@ export const getStepSelector = (step: Step): string => {
 // Refer : https://github.com/grafana/grafana/blob/v8.1.5/public/app/features/plugins/plugin_loader.ts#L87
 const panelSelectorByPanelTitle = (panelTitle: string): string => {
   if (gte(config.buildInfo.version, '9.5.0')) {
-    return `div[data-testid='data-testid Panel dashboard ${panelTitle}']`;
+    return `div[data-testid='data-testid Panel header ${panelTitle}']`;
   } else if (gte(config.buildInfo.version, '8.1.0')) {
     return `section[aria-label='${panelTitle} panel']`;
   } else {

@@ -2,13 +2,13 @@ version: '3.0'
 
 services:
   grafana:
-    container_name: 'grafana-guidedtour-panel'
+    container_name: 'nline-guidedtour-panel'
     build:
       context: ./.config
       args:
-        grafana_version: ${GRAFANA_VERSION:-9.3.8}
+        grafana_version: ${GRAFANA_VERSION:-9.5.0}
     ports:
       - 3000:3000/tcp
     volumes:
-      - ./dist:/var/lib/grafana/plugins/grafana-guidedtour-panel
+      - ./dist:/var/lib/grafana/plugins/nline-guidedtour-panel
       - ./provisioning:/etc/grafana/provisioning
