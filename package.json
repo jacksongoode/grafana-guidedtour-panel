@@ -1,5 +1,5 @@
 {
-  "name": "grafana-guidedtour-panel",
+  "name": "nline-guidedtour-panel",
   "version": "0.5.0",
   "description": "Guided tour for Grafana dashboards",
   "scripts": {
@@ -17,8 +17,8 @@
     "test:ci": "jest --passWithNoTests --maxWorkers 4",
     "typecheck": "tsc --noEmit",
     "watch": "yarn dev",
-    "release": "tag=$(git describe --abbrev=0) && gh release upload ${tag} ./grafana-guidedtour-panel-${tag}.zip ./grafana-guidedtour-panel-${tag}.zip.md5 --clobber",
-    "validate": "tag=$(git describe --abbrev=0) && npx -y @grafana/plugin-validator@latest -sourceCodeUri https://github.com/jacksongoode/grafana-guidedtour-panel/tree/${tag} https://github.com/jacksongoode/grafana-guidedtour-panel/releases/download/${tag}/grafana-guidedtour-panel-${tag}.zip"
+    "release": "tag=$(git describe --abbrev=0) && gh release upload ${tag} ./nline-guidedtour-panel-${tag}.zip ./nline-guidedtour-panel-${tag}.zip.md5 --clobber",
+    "validate": "tag=$(git describe --abbrev=0) && npx -y @grafana/plugin-validator@latest -sourceCodeUri https://github.com/jacksongoode/nline-guidedtour-panel/tree/${tag} https://github.com/jacksongoode/nline-guidedtour-panel/releases/download/${tag}/nline-guidedtour-panel-${tag}.zip"
   },
   "author": "Grafana Labs",
   "license": "Apache-2.0",
