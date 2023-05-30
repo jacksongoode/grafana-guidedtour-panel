@@ -14,12 +14,12 @@ echo "Packaging $tag"
 rm -rf dist
 yarn install && yarn build && npx @grafana/sign-plugin@latest --rootUrls http://localhost:3000
 
-cp -r dist grafana-guidedtour-panel
-zip -r grafana-guidedtour-panel.zip grafana-guidedtour-panel
-mv grafana-guidedtour-panel.zip grafana-guidedtour-panel-"${tag}".zip
+cp -r dist nline-guidedtour-panel
+zip -r nline-guidedtour-panel.zip nline-guidedtour-panel
+mv nline-guidedtour-panel.zip nline-guidedtour-panel-"${tag}".zip
 if ! [ -x "$(command -v md5)" ]; then
-	md5sum grafana-guidedtour-panel-"${tag}".zip >grafana-guidedtour-panel-"${tag}".zip.md5
+	md5sum nline-guidedtour-panel-"${tag}".zip >nline-guidedtour-panel-"${tag}".zip.md5
 else
-	md5 grafana-guidedtour-panel-"${tag}".zip >grafana-guidedtour-panel-"${tag}".zip.md5
+	md5 nline-guidedtour-panel-"${tag}".zip >nline-guidedtour-panel-"${tag}".zip.md5
 fi
-rm -rf grafana-guidedtour-panel
+rm -rf nline-guidedtour-panel
