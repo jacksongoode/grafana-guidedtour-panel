@@ -7,3 +7,6 @@ e2e/videos
 e2e/screenshots
 .env
 .eslintcache
+*.env
+yarn.lock
+yarn-error.log
