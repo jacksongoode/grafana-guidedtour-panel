@@ -1,6 +1,6 @@
 {
   "name": "grafana-guidedtour-panel",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Guided tour for Grafana dashboards",
   "scripts": {
     "build": "webpack -c ./.config/webpack/webpack.config.ts --env production",
@@ -16,7 +16,9 @@
     "test": "jest --watch --onlyChanged",
     "test:ci": "jest --passWithNoTests --maxWorkers 4",
     "typecheck": "tsc --noEmit",
-    "watch": "yarn dev"
+    "watch": "yarn dev",
+    "release": "tag=$(git describe --abbrev=0) && gh release upload ${tag} ./grafana-guidedtour-panel-${tag}.zip ./grafana-guidedtour-panel-${tag}.zip.md5 --clobber",
+    "validate": "tag=$(git describe --abbrev=0) && npx -y @grafana/plugin-validator@latest -sourceCodeUri https://github.com/jacksongoode/grafana-guidedtour-panel/tree/${tag} https://github.com/jacksongoode/grafana-guidedtour-panel/releases/download/${tag}/grafana-guidedtour-panel-${tag}.zip"
   },
   "author": "Grafana Labs",
   "license": "Apache-2.0",
