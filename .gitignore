@@ -7,3 +7,4 @@ e2e/videos
 e2e/screenshots
 .env
 .eslintcache
+keys.env

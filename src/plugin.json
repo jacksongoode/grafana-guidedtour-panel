@@ -2,13 +2,13 @@
   "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/docs/sources/developers/plugins/plugin.schema.json",
   "type": "panel",
   "name": "Guided Tour",
-  "id": "grafana-guidedtour-panel",
+  "id": "nline-guidedtour-panel",
   "skipDataQuery": true,
   "info": {
     "description": "Guided tour for Grafana dashboards",
     "author": {
-      "name": "Grafana Labs",
-      "url": "https://grafana.com"
+      "name": "nLine Inc.",
+      "url": "https://nline.io"
     },
     "keywords": ["Guided tour"],
     "logos": {
@@ -18,11 +18,11 @@
     "links": [
       {
         "name": "Website",
-        "url": "https://github.com/grafana/grafana-guidedtour-panel"
+        "url": "https://github.com/nline/nline-guidedtour-panel"
       },
       {
         "name": "License",
-        "url": "https://github.com/grafana/grafana-guidedtour-panel/blob/main/LICENSE"
+        "url": "https://github.com/nline/nline-guidedtour-panel/blob/main/LICENSE"
       }
     ],
     "screenshots": [],
