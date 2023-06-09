@@ -10,7 +10,7 @@
     },
     {
       "type": "panel",
-      "id": "grafana-guidedtour-panel",
+      "id": "nline-guidedtour-panel",
       "name": "Guided Tour",
       "version": "0.3.0"
     },
@@ -115,7 +115,7 @@
         "width": "300px"
       },
       "transparent": true,
-      "type": "grafana-guidedtour-panel"
+      "type": "nline-guidedtour-panel"
     },
     {
       "fieldConfig": {

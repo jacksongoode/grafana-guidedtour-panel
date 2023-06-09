@@ -12,14 +12,15 @@ fi
 echo "Packaging $tag"
 
 rm -rf dist
-yarn install && yarn build && npx @grafana/sign-plugin@latest
+yarn install && yarn build 
+# && yarn sign --rootUrls https://localhost:3000
 
-cp -r dist nline-plotlyjs-panel
-zip -r nline-plotlyjs-panel.zip nline-plotlyjs-panel
-mv nline-plotlyjs-panel.zip nline-plotlyjs-panel-"${tag}".zip
+cp -r dist nline-guidedtour-panel
+zip -r nline-guidedtour-panel.zip nline-guidedtour-panel
+mv nline-guidedtour-panel.zip nline-guidedtour-panel-"${tag}".zip
 if ! [ -x "$(command -v md5)" ]; then
-	md5sum nline-plotlyjs-panel-"${tag}".zip >nline-plotlyjs-panel-"${tag}".zip.md5
+	md5sum nline-guidedtour-panel-"${tag}".zip >nline-guidedtour-panel-"${tag}".zip.md5
 else
-	md5 nline-plotlyjs-panel-"${tag}".zip >nline-plotlyjs-panel-"${tag}".zip.md5
+	md5 nline-guidedtour-panel-"${tag}".zip >nline-guidedtour-panel-"${tag}".zip.md5
 fi
-rm -rf nline-plotlyjs-panel
+rm -rf nline-guidedtour-panel
